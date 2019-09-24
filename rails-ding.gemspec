@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = Rails::Ding::VERSION
   s.authors     = [""]
   s.email       = [""]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Rails::Ding."
-  s.description = "TODO: Description of Rails::Ding."
+  s.homepage    = "http://www.liuxiaodao.top"
+  s.summary     = "Ding API"
+  s.description = "DingDing API"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
