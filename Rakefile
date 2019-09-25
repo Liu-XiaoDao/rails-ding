@@ -34,3 +34,7 @@ end
 
 
 task default: :test
+
+task :console do
+  exec "irb -I ./lib"
+end
