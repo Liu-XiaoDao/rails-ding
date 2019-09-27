@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = [""]
   s.homepage    = "http://www.liuxiaodao.top"
   s.summary     = "Ding API"
-  s.description = "DingDing API"
+  s.description = "提供钉钉开发服务端API"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]

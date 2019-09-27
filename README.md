@@ -25,7 +25,8 @@ $ gem install rails-ding
 * 创建项目
 2019-09-26
 * 转移auth, cache, http, log等功能块，并做适配gem的修改，其中auth并没有完成
-
+2019-09-27
+* 转移chat, department, message, user; 添加配置
 ## todolist
 关于文件缓存及日志，要考虑正式使用时保存位置
 
