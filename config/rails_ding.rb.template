@@ -1,0 +1,7 @@
+#file_name :rails_ding.rb
+#paht: config/initializers/rails_ding.rb
+Rails::Ding.configure do |configuration|
+  configuration.corpid = ""
+  configuration.secret = ""
+  configuration.agentid = ""
+end
