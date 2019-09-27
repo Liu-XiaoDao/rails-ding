@@ -27,6 +27,8 @@ $ gem install rails-ding
 * 转移auth, cache, http, log等功能块，并做适配gem的修改，其中auth并没有完成
 2019-09-27
 * 转移chat, department, message, user; 添加配置
+## 提醒
+之前是依赖于5.1.6，现在改成依赖5.1.0
 ## todolist
 关于文件缓存及日志，要考虑正式使用时保存位置
 
