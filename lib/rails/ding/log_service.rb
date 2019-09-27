@@ -12,7 +12,7 @@ module Rails
 
       def self.write(level,msg)
         # TODO: 日志保存位置要修改
-        filename = Rails.root.to_s + "./log/my.log"
+        filename = Rails.root.to_s + "/log/my.log"
         file = File.open(filename, "a")
         file.write("#{level}/#{Time.now}  #{msg}\n")
         file.close

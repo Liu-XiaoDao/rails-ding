@@ -30,20 +30,20 @@ module Rails
       def self.set(key,value,options = {})
         ex = options[:ex] ? Time.now.to_i + options[:ex] : 0
         if key && value
-          data = get_file(Rails.root.to_s + "config/filecache.yml")
+          data = get_file(Rails.root.to_s + "/config/filecache.yml")
 
           item = {}
           item["#{key}"] = value
           item['expire_time'] = ex
           item['create_time'] = Time.now.to_i
           data["#{key}"] = item
-          set_file(Rails.root.to_s + "config/filecache.yml",data.to_json)
+          set_file(Rails.root.to_s + "/config/filecache.yml",data.to_json)
         end
       end
 
       def self.get(key)
         if key.present?
-          data = get_file(Rails.root.to_s + "config/filecache.yml")
+          data = get_file(Rails.root.to_s + "/config/filecache.yml")
           if data.present? && data.has_key?(key)
               item = data["#{key}"]
               return false  if !item
