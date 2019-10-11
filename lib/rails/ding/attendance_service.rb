@@ -27,18 +27,16 @@ module Rails
       #   return response
       # end
 
-      =begin
-        data = {
-          "userIds": [1, 2, 3],
-          "checkDateFrom": "2019-10-11 00:00:00",
-          "checkDateTo": "2019-10-12 00:00:00",
-          "isI18n": "false"
-        }
-        listRecord(accessToken,data)
-      =end
+      # data = {
+      #   "userIds": [1, 2, 3],
+      #   "checkDateFrom": "2019-10-11 00:00:00",
+      #   "checkDateTo": "2019-10-12 00:00:00",
+      #   "isI18n": "false"
+      # }
+      # listRecord(accessToken,data)
 
       def self.listRecord(accessToken, opt)
-        response = HttpService.post("/attendance/listRecord?",{access_token: accessToken}, opt.to_json)
+        response = HttpService.post("/attendance/listRecord",{access_token: accessToken}, opt.to_json)
         return response
       end
 

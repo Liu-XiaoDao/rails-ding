@@ -4,6 +4,7 @@ module Rails
     class HttpService
       require 'net/https'
       require 'uri'
+      require 'rest-client'
 
       @@oapi_host = 'https://oapi.dingtalk.com'
 

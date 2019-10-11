@@ -8,6 +8,7 @@ require "rails/ding/chat_service"
 require "rails/ding/department_service"
 require "rails/ding/message_service"
 require "rails/ding/user_service"
+require "rails/ding/attendance_service"
 
 begin
   require "pry"
@@ -16,10 +17,6 @@ end
 
 module Rails
   module Ding
-    # puts "test"
-    # Rails::Ding::LogService.e("[getConfig] ERR: no corp access token");
-    # Rails::Ding::CacheService::setCorpAccessToken('2222')
-    # puts Rails::Ding::HttpService::get('/gettoken?', {corpid: 'ding4e97ac09cf15a1d2', corpsecret: 'jQOqko0rIUGRSBV4APykM9horY317-7TTtPdmKeyhIjnDPYxkfMMAJnwixllLCBx'})
     class << self
       attr_writer :configuration
     end
@@ -35,9 +32,5 @@ module Rails
     def self.configure
       yield(configuration)
     end
-
-    # accessToken = AuthService.getAccessToken
-    # l = DepartmentService.listDept(accessToken)
-    # binding.pry
   end
 end
